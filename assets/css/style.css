@@ -1,0 +1,17 @@
+header {
+	text-align: center;
+	color: #990012;
+
+}
+body {
+	background: #FFFDDD;
+	text-align: center;
+}
+
+#wrapper {
+	padding-top: 10px;
+	background: #990012;
+	color: white;
+	margin-left: 40px;
+	margin-right: 40px;
+}
