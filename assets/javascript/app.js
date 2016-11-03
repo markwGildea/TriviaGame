@@ -1,4 +1,4 @@
-var number = 90;
+var number = 121;
 
 	function run(){
 		counter = setInterval(decrement, 1000);
@@ -18,4 +18,8 @@ var number = 90;
 	}
 
 	run();
+
+	$("#choice1").click(function () {
+      });
+
 	
