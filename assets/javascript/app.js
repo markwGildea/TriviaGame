@@ -1,31 +1,36 @@
 var correct = 0;
 var wrong = 0;
 
-$("choice2").is(':checked');
-$("choice6").is(':checked');
+function count() {
+
+    if (chosen){
+    	$("#choice2").is(':checked')
+	    correct++;
+    }
+    if (chosen){
+    	$("#choice6").is(':checked')
+	    correct++;
+    }
+}
+
+console.log(count);
 
 function results() {
-	if (true){
-		correct++;	
-		$('#display').html(correct);
-		// $('#display').html(wrong);
+
+	if (true){	
+		$('#display').html('<h3>Correct Answers: ' + correct + '</h3>');
+		// $('#display').html('<h3>Incorrect Answers: ' + wrong = '</h3>');
 		$('#questions').hide();
 		$('#show-number').hide();
-
-	}
-	if (false){
-		wrong--;
+	}else if (false){
 		// $('#display').html(correct);
-		$('#display').html(wrong);
+		$('#display').html('<h3>Incorrect Answers: ' + wrong + '</h3>');
 		$('#questions').hide();
 		$('#show-number').hide();
 	} 
 
-}
+}  
 
-
-
-        
 
 var number = 121;
 
