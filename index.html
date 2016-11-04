@@ -8,14 +8,13 @@
 </head>
 
 <body>
-  <header>
-    <h1>Trivia Game</h1></header>
+  <header><h1>Trivia Game</h1></header>
   <div id="wrapper">
     <div id="show-number"></div>
     <div id="display"></div>
     <hr>
     <div id="buttons">
-      <div id="question1">
+      <div id="questions">
         <h2>What year did the Cubs win the world series?</h2>
         <form>
           <input type="radio" name="answer" id="choice1"> 1908</input>
@@ -23,13 +22,22 @@
           <input type="radio" name="answer" id="choice2"> 2016</input>
           <br>
           <input type="radio" name="answer" id="choice3"> 1945</input>
+          <br>
         </form>
         <hr>
-        <h2>Question Two</h2>
+        <h2>How many NBA Championships do the Bulls have since 1990?</h2>
         <form>
-          <input type="radio" name="answer" id="choice4">What it is?</input>
-          <input type="radio" name="answer" id="choice5">What?</input>
-          <input type="radio" name="answer" id="choice6">Yup yup</input>
+          <input type="radio" name="answer" id="choice4">Two</input>
+          <br>
+          <input type="radio" name="answer" id="choice5">Four</input>
+          <br>
+          <input type="radio" name="answer" id="choice6">Six</input>
+          <br>
+          <hr>
+          <input name="refresh" type="button" value="DONE" onClick="
+          results()">
+          <hr>
+          <input name="refresh" type="button" value="Try Again" onClick="location.reload()">
         </form>
         <hr>
       </div>
@@ -37,7 +45,7 @@
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
   <script type="text/javascript" src="assets/javascript/app.js"></script>
-  start by getting UI working first. buttons that work with user input. get them on screen. 2) get values from radio buttons 3) **one thing at a time, get one to work first, then move on 4) look at thursday lecture again. 5) get first thing working first and go from there.
+  
 </body>
 
 </html>

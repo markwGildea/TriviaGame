@@ -1,3 +1,32 @@
+var correct = 0;
+var wrong = 0;
+
+$("choice2").is(':checked');
+$("choice6").is(':checked');
+
+function results() {
+	if (true){
+		correct++;	
+		$('#display').html(correct);
+		// $('#display').html(wrong);
+		$('#questions').hide();
+		$('#show-number').hide();
+
+	}
+	if (false){
+		wrong--;
+		// $('#display').html(correct);
+		$('#display').html(wrong);
+		$('#questions').hide();
+		$('#show-number').hide();
+	} 
+
+}
+
+
+
+        
+
 var number = 121;
 
 function run() {
@@ -17,6 +46,10 @@ function stop() {
     clearInterval(counter);
 }
 
-run();
+run();   
 
-$("#choice1").click(function() {});
+function init() {
+    decrement();
+}
+
+window.onload = init;
