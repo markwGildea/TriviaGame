@@ -1,28 +1,29 @@
 var correct = 0;
 var wrong = 0;
 
+// $('#choice2') = true;
+// $('#choice6') = true;
+
 function count() {
 
-    if (chosen){
-    	$("#choice2").is(':checked')
+    if (choice === true){
+    	// $("#choice2, choice6, ").is(':checked')
 	    correct++;
-    }
-    if (chosen){
-    	$("#choice6").is(':checked')
-	    correct++;
-    }
+    // }else () { 
+    // wrong++;
+    // }
+}
 }
 
-console.log(count);
 
 function results() {
 
 	if (true){	
 		$('#display').html('<h3>Correct Answers: ' + correct + '</h3>');
-		// $('#display').html('<h3>Incorrect Answers: ' + wrong = '</h3>');
+		// $('#display').html('<h3>Incorrect Answers: ' + wrong + '</h3>');
 		$('#questions').hide();
 		$('#show-number').hide();
-	}else if (false){
+	}if (true) {
 		// $('#display').html(correct);
 		$('#display').html('<h3>Incorrect Answers: ' + wrong + '</h3>');
 		$('#questions').hide();
